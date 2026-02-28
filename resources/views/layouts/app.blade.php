@@ -32,12 +32,24 @@
                         
                         <!-- Navigation Links -->
                         <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                            <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                                Tableau de bord
-                            </x-nav-link>
                             <x-nav-link href="{{ route('properties.index') }}" :active="request()->routeIs('properties.*')">
                                 Propriétés
                             </x-nav-link>
+                            <x-nav-link href="{{ route('my-bookings') }}" :active="request()->routeIs('my-bookings')">
+                                Mes réservations
+                                @auth
+                                    @php
+                                        $pendingBookings = auth()->user()->bookings()
+                                            ->where('status', \App\Enums\BookingStatus::PENDING->value)
+                                            ->count();
+                                    @endphp
+                                    @if($pendingBookings > 0)
+                                        <span class="ml-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                            {{ $pendingBookings }}
+                                        </span>
+                                    @endif
+                                @endauth
+                            </x-nav-link>                            
                         </div>
                     </div>
                     
