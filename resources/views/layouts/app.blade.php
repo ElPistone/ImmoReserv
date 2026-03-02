@@ -25,7 +25,7 @@
                     <div class="flex">
                         <!-- Logo -->
                         <div class="shrink-0 flex items-center">
-                            <a href="{{ route('dashboard') }}" class="text-2xl font-bold text-primary">
+                            <a href="{{ route('properties.index') }}" class="text-2xl font-bold text-primary">
                                 LaravelTest
                             </a>
                         </div>

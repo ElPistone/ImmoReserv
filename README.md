@@ -1,59 +1,65 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏠 Application de Gestion de Réservations Immobilières
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-12-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Livewire](https://img.shields.io/badge/Livewire-3-FB70A9?style=for-the-badge&logo=livewire&logoColor=white)
+![Filament](https://img.shields.io/badge/Filament-3-FFB703?style=for-the-badge&logo=filament&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-## About Laravel
+## 📋 Description
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Application web complète de gestion de réservations immobilières développée avec Laravel. Elle permet aux utilisateurs de parcourir des biens immobiliers, effectuer des réservations et gérer leurs séjours, tandis que les administrateurs disposent d'un panneau d'administration complet.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### ✨ Fonctionnalités principales
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **🔐 Authentification complète** (Inscription, Connexion, Mot de passe oublié) avec Laravel Breeze
+- **🏘️ Gestion des propriétés** : Liste, détail, recherche
+- **📅 Système de réservation** :
+  - Sélection de dates avec validation
+  - Calcul automatique du prix total
+  - Vérification de disponibilité en temps réel
+  - Gestion des statuts (confirmée, en-cours, annulée)
+- **👤 Espace utilisateur** :
+  - Consultation des réservations
+  - Annulation des réservations modifiables
+- **⚡ Interface dynamique** avec Livewire (pas de rechargement de page)
+- **🛠️ Panneau d'administration** avec Filament :
+  - CRUD complet pour les propriétés
+  - CRUD complet pour les réservations
+  - Filtres et recherches avancés
+- **🎨 Design responsive** avec TailwindCSS
 
-## Learning Laravel
+## 🚀 Technologies utilisées
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+| Technologie | Version | Utilisation |
+|------------|---------|-------------|
+| PHP | 8.2+ | Langage backend |
+| Laravel | 12 | Framework PHP |
+| Livewire | 3 | Composants dynamiques |
+| Filament | 3 | Panneau d'administration |
+| TailwindCSS | 3 | Framework CSS |
+| MySQL | 8 | Base de données |
+| Composer | 2 | Gestionnaire de dépendances PHP |
+| NPM | 10 | Gestionnaire de dépendances JS |
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 📦 Installation
 
-## Laravel Sponsors
+### Prérequis
+- PHP ≥ 8.2
+- Composer
+- MySQL ≥ 8.0
+- Node.js & NPM
+- Git
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Installation automatique (recommandée)
 
-### Premium Partners
+```bash
+# Cloner le projet
+git clone https://github.com/ElPistone/ImmoReserv
+cd laravel-test
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+# Rendre le script exécutable
+chmod +x install.sh
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Lancer l'installation interactive
+./install.sh
