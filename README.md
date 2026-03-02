@@ -33,7 +33,7 @@ Application web complète de gestion de réservations immobilières développée
 
 | Technologie | Version | Utilisation |
 |------------|---------|-------------|
-| PHP | 8.2+ | Langage backend |
+| PHP | 8.2.12 | Langage backend |
 | Laravel | 12 | Framework PHP |
 | Livewire | 3 | Composants dynamiques |
 | Filament | 3 | Panneau d'administration |
@@ -56,6 +56,10 @@ Application web complète de gestion de réservations immobilières développée
 ```bash
 # Cloner le projet
 git clone https://github.com/ElPistone/ImmoReserv
+```
+### Développement
+Author : Mamadou Dian Diaby
+
 cd laravel-test
 
 # Rendre le script exécutable
