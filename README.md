@@ -67,4 +67,4 @@ chmod +x install.sh
 ./install.sh
 ```
 ### Développement
-Author : Mamadou Dian Diaby
+Autheur : **Mamadou Dian Diaby**
