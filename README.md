@@ -56,9 +56,7 @@ Application web complète de gestion de réservations immobilières développée
 ```bash
 # Cloner le projet
 git clone https://github.com/ElPistone/ImmoReserv
-```
-### Développement
-Author : Mamadou Dian Diaby
+
 
 cd laravel-test
 
@@ -67,3 +65,6 @@ chmod +x install.sh
 
 # Lancer l'installation interactive
 ./install.sh
+```
+### Développement
+Author : Mamadou Dian Diaby
